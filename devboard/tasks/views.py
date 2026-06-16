@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Task, Project, Tag, Comment
-from django.db.models import Avg, Max, Min, Count, Q
+from django.db.models import Avg, Count, Q
+from django.contrib.auth.decorators import login_required
 
 
 def dashboard(request):
